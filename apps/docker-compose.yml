@@ -1,0 +1,26 @@
+services:
+  qwen-vision-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qwen-vision-api:latest
+    container_name: qwen-vision-server
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount model file (read-only)
+      - ./lora_model_qwen3vl.zip:/app/lora_model_qwen3vl.zip:ro
+      # Mount output directories (read-write)
+      - ./outputs_datagen_continue:/app/outputs_datagen_continue
+      - ./plots_datagen_continue:/app/plots_datagen_continue
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - PYTHONUNBUFFERED=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped

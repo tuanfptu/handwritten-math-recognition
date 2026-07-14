@@ -1,0 +1,14 @@
+-r requirements.txt
+accelerate>=1.0
+bitsandbytes>=0.45
+fastapi>=0.115
+gradio>=5
+litserve>=0.2
+peft>=0.14
+pix2text>=1.1
+python-multipart>=0.0.20
+requests>=2.32
+streamlit>=1.40
+streamlit-drawable-canvas>=0.9
+unsloth
+uvicorn>=0.34

@@ -2,7 +2,9 @@
 
 End-to-end recognition of handwritten mathematical expressions: image input to LaTeX and label-graph output. The project combines a ViT encoder + Transformer decoder with a Qwen3-VL LoRA inference service, and includes the CROHME 2019 data, training notebooks, labeling tools, web clients, and a recorded demo.
 
-🎬 **[Watch the full demo](assets/demo.mp4)**
+## Demo
+
+https://github.com/user-attachments/assets/4821be03-e62f-48c6-9597-fb6648b1f6e7
 
 ## Highlights
 
@@ -121,9 +123,9 @@ python apps/web/app_gradio_dual.py
 
 The full academic report is available at [`docs/report.pdf`](docs/report.pdf).
 
-## Demo
+## Demo assets
 
-The recorded demonstration is stored at [`assets/demo.mp4`](assets/demo.mp4). Sample inputs and experiment outputs are available in `assets/` and `docs/`.
+The original high-resolution recording is preserved at [`assets/demo.mp4`](assets/demo.mp4). Sample inputs and experiment outputs are available in `assets/` and `docs/`.
 
 ## Reproducibility notes
 

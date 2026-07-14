@@ -136,7 +136,7 @@ The original high-resolution recording is preserved at [`assets/demo.mp4`](asset
 
 ## Acknowledgements
 
-Built as a DSP391m project at FPT University using CROHME, PyTorch, Hugging Face Transformers, timm, LitServe, Streamlit, and Gradio.
+Built as a research project at FPT University using CROHME, PyTorch, Hugging Face Transformers, timm, LitServe, Streamlit, and Gradio.
 
 ## License
 
